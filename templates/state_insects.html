@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset = "UTF-8">
+    <title>Page of common insects found</title>
+	<style type="text/css">
+	h1{
+		font-size: xx-large;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+	}
+	h3{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+	}
+	form{
+		margin: 0;
+        padding: 0;
+        text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<h1>List of common insects in {{state_name}}</h1>
+	<br>
+	<h3>Click on one insect below and continue to know more!</h3>
+	<br>
+	<form action="/insects/info" method="POST">
+		{% for i in insect_list %}
+			<input type = "radio" name= "insect" value="{{i[1]}}"/>{{i[0]}}<br>
+		{% endfor %}
+		<br>
+		<input type="submit" value="Continue"/>
+	</form>
+	<br>
+	<hr>
+	<a href = "http://127.0.0.1:5000/">Back to the main page</a>
+</body>
+</html>

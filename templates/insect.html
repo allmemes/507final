@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Insect information</title>
+</head>
+<body>
+    <h1>You found a BUG: {{insect_name}}!</h1>
+    <br>
+    <details>
+        <summary>
+            Insect Description
+        </summary>
+        <br>
+        {{description}}
+        <br>
+        <p><a href ="{{photo}}" target="_blank">For the insect picture, click here.</a></p>
+    </details>
+    <br>
+    <details>
+        <summary>
+            Insect Scientific Information
+        </summary>
+        <br>
+        <table border="1">
+			<tr>
+				<td>Common Name:</td><td>{{insect_name}}</td>
+			</tr>
+			<tr>
+				<td>Scientific Name:</td><td>{{scientific_name}}</td>
+			</tr>
+			<tr>
+				<td>Order:</td><td>{{order}}</td>
+			</tr>
+			<tr>
+				<td>Family:</td><td>{{family}}</td>
+			</tr>
+		</table>
+    </details>
+    <br>
+    <details>
+        <summary>
+            Extra Information
+        </summary>
+        <p>Size: {{size}}</p>
+        <p>Color pattern: {{color}}</p>
+        <p>characteristics: {{characteristics}}</p>
+    </details>
+    <br>
+<hr>
+<p>For more information about {{insect_name}}, please click <a href="{{insect_url}}">here</a>.</p>
+<p>Hit the "back" button to see other insects.</p>
+<a href = "http://127.0.0.1:5000/">Click here to go to the main page.</a>
+</body>
+</html>

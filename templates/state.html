@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Main page for the insect identification</title>
+    <style type="text/css">
+    section{
+        border: 10px solid gray;
+        height: 35vh;
+    }
+    h1{
+        font-size: xx-large;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    h2{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    form{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <br>
+        <h1>Find Insects in States of America</h1>
+        <br>
+        <br>
+        <br>
+        <form action="/insects" method="POST">
+            <h2>
+                Input a state name: <input name="state_name" type="text"/><br/><br/><br/>
+            </h2>
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+    <br>
+    <footer>
+        <span>Information source for credit: <a href="https://www.insectidentification.org/insects-by-state-listing.php">"Insect Indentification for Casual Observer"</a></span>
+    </footer>
+</body>
+</html>
